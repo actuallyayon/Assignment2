@@ -45,12 +45,12 @@ header {
   color: #fbbf24;
 }
 
-/* Subscribe button */
+
 .navbtn button {
   background: linear-gradient(to right, #ec4899, #fbbf24, #8b5cf6);
   color: white;
   padding: 0.6rem 1.6rem;
-  border-radius: 999px; /* pill shape */
+  border-radius: 999px;
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -61,8 +61,6 @@ header {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
-
-/* Hamburger icon */
 .menu-icon {
   display: none;
   flex-direction: column;
@@ -77,12 +75,12 @@ header {
   display: block;
 }
 
-/* Hide checkbox */
+
 #menu-toggle {
   display: none;
 }
 
-/* Responsive */
+
 @media (max-width: 576px) {
   .logo img {
     width: 137px;
