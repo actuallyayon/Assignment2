@@ -263,3 +263,75 @@ header {
     padding: 0.6rem 1rem;
   }
 }
+
+.about {
+  background: #1A0B2E;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.about-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.stat-item {
+  background: #1A0B2E;
+  padding: 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.stat-item:hover {
+  background-color: #1a0b2a;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #22c55e;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 576px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .about h2 {
+    font-size: 1.8rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+
+  .stat-item h3 {
+    font-size: 1.6rem;
+  }
+}
+
