@@ -335,3 +335,99 @@ header {
     font-size: 1.6rem;
   }
 }
+
+.why-choose {
+  background: #230E3D;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.why-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.why-content p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #d1d5db;
+}
+
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+}
+
+.feature-card {
+  background: #351165;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #FFFFFF;
+}
+.feature-card p {
+  font-size: 0.95rem;
+  color: #9ca3af;
+  line-height: 1.5;
+}
+
+
+@media (max-width: 992px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 576px) {
+  .why-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .why-content p {
+    font-size: 0.95rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .feature-icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .feature-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature-card p {
+    font-size: 0.9rem;
+  }
+}
