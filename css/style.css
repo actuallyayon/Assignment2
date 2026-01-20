@@ -59,7 +59,7 @@ header {
 
 .navbtn button:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 12px grey;
 }
 .menu-icon {
   display: none;
@@ -224,7 +224,7 @@ header {
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  box-shadow: 0 4px 12px grey;
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
@@ -662,5 +662,101 @@ header {
 
   .social-icons {
     justify-content: center;
+  }
+}
+.site-footer {
+  position: relative;
+  background: #0f172a;
+  color: #d1d5db;
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.footer-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.footer-bg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 160px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.platforms span {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #fbbf24;
+}
+
+.platforms ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.platforms li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+.platforms img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.footer-content .copyright {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 576px) {
+  .footer-logo {
+    width: 140px;
+  }
+
+  .platforms ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .platforms li {
+    font-size: 0.9rem;
+  }
+
+  .footer-content .copyright {
+    font-size: 0.8rem;
+  }
+
+  .footer-bg img {
+    object-fit: cover;
+    height: 120px;
   }
 }
